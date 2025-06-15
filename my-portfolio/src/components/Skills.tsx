@@ -133,9 +133,9 @@ const Skills = () => {
 										<Image
 											src={skill.image}
 											alt={skill.name}
+											unoptimized
 											width={40}
 											height={40}
-											unoptimized
 											className="rounded-lg mr-4"
 										/>
 										<div className="flex-1">
@@ -171,9 +171,9 @@ const Skills = () => {
 										<Image
 											src={skill.image}
 											alt={skill.name}
+											unoptimized
 											width={40}
 											height={40}
-											unoptimized
 											className="rounded-lg mr-4"
 										/>
 										<div className="flex-1">
