@@ -41,6 +41,7 @@ const projects: Project[] = [
 		technologies: ["Vue.js", "Javascript", "Bootstrap", "Vuex", "Vuetify", "SaaS"],
 		liveLink: "https://oas36ty.com/",
 		comingSoon: false,
+		// liveLink: "https://ecommerce-demo.com",
 	},
 	{
 		title: "CIRP Portal",
