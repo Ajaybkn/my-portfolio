@@ -103,6 +103,7 @@ const Header = () => {
 									sizes="100vw"
 									className="h-28 w-auto object-contain "
 									priority
+									unoptimized
 								/>
 							</div>
 						</motion.div>

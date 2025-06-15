@@ -132,6 +132,7 @@ const Projects = () => {
 										src={project.image}
 										alt={project.title}
 										fill
+										unoptimized
 										className="object-cover transform group-hover:scale-110 transition-transform duration-500"
 									/>
 								)}

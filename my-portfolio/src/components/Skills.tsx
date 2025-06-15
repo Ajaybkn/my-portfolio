@@ -91,7 +91,14 @@ const Skills = () => {
 								<div className="absolute inset-0 bg-gradient-to-br from-orange-400/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 								<div className="relative z-10">
 									<div className="flex items-center justify-center mb-4">
-										<Image src={skill.image} alt={skill.name} width={48} height={48} className="rounded-lg" />
+										<Image
+											src={skill.image}
+											alt={skill.name}
+											width={48}
+											height={48}
+											unoptimized
+											className="rounded-lg"
+										/>
 									</div>
 									<h4 className="text-center text-white font-medium mb-3">{skill.name}</h4>
 									{/* <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
@@ -123,7 +130,14 @@ const Skills = () => {
 								>
 									<div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 									<div className="relative z-10 flex items-center">
-										<Image src={skill.image} alt={skill.name} width={40} height={40} className="rounded-lg mr-4" />
+										<Image
+											src={skill.image}
+											alt={skill.name}
+											width={40}
+											height={40}
+											unoptimized
+											className="rounded-lg mr-4"
+										/>
 										<div className="flex-1">
 											<h4 className="text-white font-medium mb-2">{skill.name}</h4>
 											{/* <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
@@ -154,7 +168,14 @@ const Skills = () => {
 								>
 									<div className="absolute inset-0 bg-gradient-to-br from-green-400/10 to-teal-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 									<div className="relative z-10 flex items-center">
-										<Image src={skill.image} alt={skill.name} width={40} height={40} className="rounded-lg mr-4" />
+										<Image
+											src={skill.image}
+											alt={skill.name}
+											width={40}
+											height={40}
+											unoptimized
+											className="rounded-lg mr-4"
+										/>
 										<div className="flex-1">
 											<h4 className="text-white font-medium mb-2">{skill.name}</h4>
 											{/* <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
