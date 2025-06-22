@@ -54,7 +54,7 @@ const projects: Project[] = [
 		title: "Chatty",
 		description: "A full-stack real-time chat application built with Next.js, Node.js,Websocket and MongoDB.",
 		image: "/chatty.webp",
-		technologies: ["Next.js", "Node.js", "MongoDB", "Websocket"],
+		technologies: ["Next.js", "Node.js", "MongoDB", "Websockets", "Zustand"],
 		liveLink: "https://chat-app-1-7xjt.onrender.com",
 		comingSoon: false,
 	},
