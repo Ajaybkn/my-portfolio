@@ -52,18 +52,21 @@ const projects: Project[] = [
 	},
 	{
 		title: "Chatty",
-		description: "A full-stack real-time chat application built with Next.js, Node.js,Websocket and MongoDB.",
+		description:
+			"A full-stack real-time chat application built with Next.js, Node.js,Websocket and MongoDB with multiple themes",
 		image: "/chatty.webp",
 		technologies: ["Next.js", "Node.js", "MongoDB", "Websockets", "Zustand"],
 		liveLink: "https://chat-app-1-7xjt.onrender.com",
 		comingSoon: false,
 	},
 	{
-		title: "Dimension",
-		description: "Demo website for a company.",
-		image: "/ddmen.webp",
-		technologies: ["React", "Tailwind CSS", "Framer Motion", "Javascript"],
-		liveLink: "https://dimensions1.netlify.app/",
+		title: "Posgrestore",
+		description:
+			"Simple store build with PostgresSQL, Express, React and Node.js with rate limiting and bot detection with multiple themes",
+		image:
+			"https://images.unsplash.com/photo-1604066867775-43f48e3957d8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHN0b3JlfGVufDB8fDB8fHww",
+		technologies: ["React", "Tailwind CSS", "Javascript", "PostgreSQL", "Neon", "ArcJet", "Zustand"],
+		liveLink: "https://pern-stack-e0xk.onrender.com/",
 	},
 ];
 
