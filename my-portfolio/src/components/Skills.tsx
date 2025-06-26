@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const skillsData = {
 	frontend: [
-		{ name: "Next.js", image: "/skills/nextjs.png", level: 85 },
+		{ name: "Next.js", image: "/skills/nextt.png", level: 85 },
 		{ name: "TypeScript", image: "/skills/typescript.webp", level: 80 },
 		{ name: "React", image: "/skills/react.svg", level: 90 },
 		{ name: "Javascript", image: "/skills/javascript.webp", level: 90 },
@@ -16,19 +16,23 @@ const skillsData = {
 		{ name: "Css", image: "/skills/css.png", level: 90 },
 		{ name: "Tailwind CSS", image: "/skills/tailwind.webp", level: 95 },
 		{ name: "Bootstrap", image: "/skills/bootstrap.png", level: 95 },
+		{ name: "Zustand", image: "/skills/zustand.jpeg", level: 95 },
 	],
 	backend: [
 		{ name: "Node.js", image: "/skills/nodejs.png", level: 85 },
 		{ name: "Express", image: "/skills/express.png", level: 80 },
 		{ name: "MongoDB", image: "/skills/mongodb.webp", level: 75 },
+		{ name: "PostgreSQL", image: "/skills/postgre.png", level: 75 },
 	],
 	tools: [
 		{ name: "Git", image: "/skills/git.png", level: 85 },
 		{ name: "VS Code", image: "/skills/vs.png", level: 85 },
 		{ name: "GitHub", image: "/skills/github.png", level: 85 },
 		{ name: "GitHub Actions", image: "/skills/github-actions.png", level: 85 },
-		{ name: "Cursor AI", image: "/skills/cursor.avif", level: 70 },
+		{ name: "Cursor AI", image: "/skills/cursorr.jpeg", level: 70 },
 		{ name: "AWS", image: "/skills/aws.png", level: 65 },
+		{ name: "Neon", image: "/skills/neon.jpeg", level: 65 },
+		{ name: "Arcjet", image: "/skills/arcjet.jpeg", level: 65 },
 	],
 };
 
