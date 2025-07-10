@@ -84,7 +84,7 @@ const buttonVariants = {
 
 const Intro = () => {
 	const [isMounted, setIsMounted] = useState(false);
-	const name = "Ajay Singh Khangarot";
+	const name = "Ajay S. Khangarot";
 	const role = "Full Stack Developer";
 	const description = "Crafting digital experiences with modern technologies";
 
