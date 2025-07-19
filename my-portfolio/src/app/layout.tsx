@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Ajay S. Khangarot | Full Stack Developer Portfolio",
+	title: "Ajay Singh Khangharot | Full Stack Developer Portfolio",
 	description:
-		"Portfolio of Ajay S. Khangarot, a passionate full-stack developer specializing in React, Next.js, Node.js, and modern web technologies.",
+		"Portfolio of Ajay Singh Khangharot, a passionate full-stack developer specializing in React, Next.js, Node.js, and modern web technologies.",
 
 	icons: {
 		icon: "/logo32.png",
