@@ -24,7 +24,7 @@ const Footer = () => {
 		{
 			name: "Email",
 			icon: FaEnvelope,
-			url: "https://mail.google.com/mail/?view=cm&fs=1&to=ajaybkn1108@gmail.com&su=Hello%20Ajay&body=Hi%20Ajay%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.",
+			url: "https://mail.google.com/mail/?view=cm&fs=1&to=ajay.khangharot88@gmail.com&su=Hello%20Ajay&body=Hi%20Ajay%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.",
 			color: "hover:text-orange-400",
 		},
 	];
