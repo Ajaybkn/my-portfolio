@@ -138,7 +138,7 @@ const Intro = () => {
 				</motion.div>
 
 				{/* Name with Enhanced Animation */}
-				<motion.h1 className="text-4xl md:text-7xl font-extrabold mb-6 flex gap-1 text-orange-400 justify-center flex-wrap tracking-wide drop-shadow-lg">
+				<motion.h1 className="text-4xl md:text-5updatexl font-extrabold mb-6 flex gap-1 text-orange-400 justify-center flex-wrap tracking-wide drop-shadow-lg">
 					{name.split("").map((char, i) => (
 						<motion.span key={i} variants={letterAnimation} className="inline-block">
 							{char === " " ? "\u00A0" : char}
