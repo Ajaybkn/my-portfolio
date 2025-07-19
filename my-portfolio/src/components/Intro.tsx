@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const cvLink = "/Ajay-Singh-Khangarot-Resume-2025.pdf";
+const cvLink = "/Ajay Singh Khangharot CV july.pdf";
 
 // Enhanced animations
 const staggerContainer = {
@@ -95,7 +95,7 @@ const Intro = () => {
 	const handleDownloadCV = () => {
 		const link = document.createElement("a");
 		link.href = cvLink;
-		link.download = "Ajay_Singh_Khangarot_CV.pdf";
+		link.download = "Ajay_Singh_Khangharot_CV.pdf";
 		document.body.appendChild(link);
 		link.click();
 		document.body.removeChild(link);
