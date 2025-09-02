@@ -68,6 +68,23 @@ const projects: Project[] = [
 		technologies: ["React", "Tailwind CSS", "Javascript", "PostgreSQL", "Neon", "ArcJet", "Zustand"],
 		liveLink: "https://pern-stack-e0xk.onrender.com/",
 	},
+	{
+		title: "URL Shortner",
+		description:
+			"ASK is a sleek, single‑page URL shortener that converts long links into shareable, reliable short URLs with one click, featuring accessible form validation, smooth animations, Rate Limiter and instant copy-to-clipboard feedback.",
+		image: "https://miro.medium.com/1*Pdw7h5X6vQQNVopIzHBG6A.jpeg",
+		technologies: ["React", "Tailwind CSS", "Javascript", "MongoDB", "Node.js", "Express"],
+		liveLink: "https://url-shortner-ouml.onrender.com/",
+	},
+	{
+		title: "Kanban Board",
+		description:
+			"A modern Kanban board that visualizes work across columns like To Do, In Progress, and Done, with drag‑and‑drop cards,unlimited add & delete Boards,lists & cards with Authentication to keep tasks flowing efficiently.",
+		image:
+			"https://media.licdn.com/dms/image/v2/C4E12AQFEng0IyUCA7Q/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1643810768536?e=2147483647&v=beta&t=5AfoApYZqfc5qj351be8mlN3JHCEUCmWX81YF-H_d-s",
+		technologies: ["React", "Tailwind CSS", "Javascript", "MongoDB", "Node.js", "Express"],
+		liveLink: "https://kanban-board-mv44.onrender.com",
+	},
 ];
 
 const Projects = () => {
