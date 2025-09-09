@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Orb from "./Orb";
 
-const cvLink = "/Ajay Singh Khangharot CV july.pdf";
+const cvLink = "/master resume august.pdf";
 
 // Enhanced animations
 const staggerContainer = {
