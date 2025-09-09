@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Orb from "./Orb";
 
 const cvLink = "/Ajay Singh Khangharot CV july.pdf";
 
@@ -115,12 +116,16 @@ const Intro = () => {
 			id="home"
 		>
 			{/* Video Background with Enhanced Overlay */}
-			<div className="absolute inset-0 w-full h-full">
+			{/* <div className="absolute inset-0 w-full h-full">
 				<video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
 					<source src="/cyber3.mp4" type="video/mp4" />
 					Your browser does not support the video tag.
 				</video>
 				<div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/90"></div>
+			</div> */}
+			{/* <div style={{ width: "100%", height: "600px", position: "relative" }}> */}
+			<div className="absolute inset-0 w-full h-full">
+				<Orb hoverIntensity={0.5} rotateOnHover={true} hue={0} forceHoverState={false} />
 			</div>
 
 			{/* Main Content with Enhanced Styling */}
