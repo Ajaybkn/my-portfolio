@@ -6,9 +6,39 @@ import { FaBriefcase, FaCode, FaServer, FaTools, FaUsers } from "react-icons/fa"
 
 const experiences = [
 	{
+		company: "Techoon Software Solutions",
+		position: "Software Developer (Frontend Focus)",
+		period: "Sept 2025- Present",
+		projects: [
+			{
+				name: "Vue 2 to Vue 3 Migration",
+				website: "",
+				description:
+					"Led the migration of a large-scale legacy application from Vue 2 to Vue 3 using the Composition API. Refactored existing components, improved code maintainability, and enhanced scalability. Optimized performance and modernized the frontend architecture for better developer experience and future extensibility.",
+			},
+			{
+				name: "Legacy Vue 2 Application Enhancement",
+				website: "",
+				description:
+					"Worked on maintaining and enhancing a legacy Vue 2 codebase by developing new features, fixing critical bugs, and improving UI performance. Optimized component structure, improved API integrations, and enhanced overall user experience, resulting in more stable and efficient application behavior.",
+			},
+		],
+		technologies: [
+			"Vue.js (Vue 2 & Vue 3)",
+			"JavaScript",
+			"Composition API",
+			"REST APIs",
+			"Vuex",
+			"Vuetify",
+			"Agentic AI",
+			"Performance Optimization",
+			"Refactoring",
+		],
+	},
+	{
 		company: "Letese Legal Tech",
 		position: "Front-End Developer",
-		period: "Sept 2024 - Present",
+		period: "Sept 2024 - Sept-2025",
 		website: "https://letese.co/",
 		achievements: [
 			{
@@ -46,12 +76,13 @@ const experiences = [
 			"GitHub Actions",
 			"SaaS",
 			"REST APIs",
+			"Agile Methodologies",
 		],
 	},
 	{
 		company: "Novative Solutions Pvt Ltd",
 		position: "Full Stack Developer",
-		period: "Feb 2023 - Sept 2024",
+		period: "Feb 2021 - Sept 2024",
 		projects: [
 			{
 				name: "OAS36ty – CA & Legal Management Software",
@@ -70,7 +101,7 @@ const experiences = [
 				description: "Built with React.js, featuring employee management and attendance tracking systems.",
 			},
 		],
-		technologies: ["Vue.js", "React.js", "Bootstrap", "REST APIs", "SaaS", "Javascript"],
+		technologies: ["Vue.js", "React.js", "Bootstrap", "REST APIs", "SaaS", "Javascript", "Vue Bootstrap", "Vuex"],
 	},
 ];
 

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Orb from "./Orb";
 
-const cvLink = "/master resume august.pdf";
+const cvLink = "/april resume-2026.pdf";
 
 // Enhanced animations
 const staggerContainer = {
