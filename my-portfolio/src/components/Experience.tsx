@@ -2,106 +2,129 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FaBriefcase, FaCode, FaServer, FaTools, FaUsers } from "react-icons/fa";
+import { FaBriefcase, FaCode, FaServer, FaUsers, FaExchangeAlt, FaThLarge, FaTools } from "react-icons/fa";
+import { TbSignal4G } from "react-icons/tb";
+import { handleSpotlight, spotlightClassName, spotlightStyle } from "@/lib/spotlight";
 
-const experiences = [
+export const experiences = [
 	{
 		company: "Techoon Software Solutions",
-		position: "Software Developer (Frontend Focus)",
+		position: "Senior Software Developer",
 		period: "Sept 2025- Present",
 		projects: [
 			{
 				name: "Vue 2 to Vue 3 Migration",
 				website: "",
 				description:
-					"Led the migration of a large-scale legacy application from Vue 2 to Vue 3 using the Composition API. Refactored existing components, improved code maintainability, and enhanced scalability. Optimized performance and modernized the frontend architecture for better developer experience and future extensibility.",
+					"Led the Vue 2 to Vue 3 migration using the Composition API, restructuring shared logic into reusable composables to improve maintainability and scalability. Reduced page-load time by approximately 30% through route-level code splitting, lazy loading, composables, and reusable components.",
 			},
 			{
-				name: "Legacy Vue 2 Application Enhancement",
+				name: "AI-Powered Migration Platform (CrewAI)",
 				website: "",
 				description:
-					"Worked on maintaining and enhancing a legacy Vue 2 codebase by developing new features, fixing critical bugs, and improving UI performance. Optimized component structure, improved API integrations, and enhanced overall user experience, resulting in more stable and efficient application behavior.",
+					"Architected an AI-powered Vue 2 to Vue 3 migration platform on CrewAI (Python): a 7-agent pipeline (Analyzer, Planner, Template/Script/Style Migrators, Merger, Reviewer) with multi-LLM support, so each agent can run on a different model. Added dependency-aware ordering (topological sort), a Merger agent for template-script linkage, and a self-healing retry loop that fixes only failing parts.",
+			},
+			{
+				name: "Centralized API Integration Layer",
+				website: "",
+				description:
+					"Built a centralized API integration layer with unified error handling across application modules.",
 			},
 		],
 		technologies: [
-			"Vue.js (Vue 2 & Vue 3)",
-			"JavaScript",
+			"Vue.js 3",
+			"TypeScript",
 			"Composition API",
 			"REST APIs",
-			"Vuex",
-			"Vuetify",
-			"Agentic AI",
+			"Python",
+			"CrewAI",
+			"Multi-LLM Workflows",
+			"Topological Sort",
 			"Performance Optimization",
-			"Refactoring",
 		],
 	},
 	{
 		company: "Letese Legal Tech",
-		position: "Front-End Developer",
+		position: "Full Stack Developer",
 		period: "Sept 2024 - Sept-2025",
 		website: "https://letese.co/",
 		achievements: [
 			{
+				icon: FaCode,
+				title: "Full Stack Development",
+				description:
+					"Built SaaS features end to end, with React.js, Next.js and TypeScript frontends and Node.js/Express backends on MongoDB, styled with Tailwind CSS.",
+			},
+			{
+				icon: FaThLarge,
+				title: "Real-Time Document Preview System",
+				description:
+					"Built a real-time, split-screen legal document preview system with dynamic questionnaire-to-template field synchronization.",
+			},
+			{
 				icon: FaUsers,
 				title: "Role-Based Access Control",
 				description:
-					"Built and integrated role-based access modules for different user types, including Admin, RM/VRM, and End Users, ensuring secure access control and a tailored user experience.",
+					"Designed and implemented role-based access control (RBAC), including permission models, authorization middleware for REST APIs, and role-aware UI.",
 			},
 			{
-				icon: FaCode,
-				title: "Frontend Development",
+				icon: FaExchangeAlt,
+				title: "REST APIs & Data Modeling",
 				description:
-					"Designed and developed the complete frontend of web applications from scratch using Next.js, TypeScript, and Tailwind CSS, ensuring high performance, responsiveness, and scalability.",
+					"Developed REST APIs and MongoDB data models for core product modules, with validation and consistent error handling.",
 			},
 			{
 				icon: FaServer,
-				title: "AWS Cloud Services",
+				title: "Cloud Deployment",
 				description:
-					"Gained hands-on experience with AWS cloud services, including ECS Fargate, EC2, ECR, and IAM for deploying and managing containerized applications.",
-			},
-			{
-				icon: FaTools,
-				title: "CI/CD & Automation",
-				description:
-					"Automated CI/CD pipelines using GitHub Actions to streamline build, test, and deployment processes, improving development efficiency and reducing manual errors.",
+					"Managed deployments on AWS (EC2, ECS, ECR, IAM): containerized services with Docker, pushed images to ECR, and automated build and deploy with GitHub Actions CI/CD.",
 			},
 		],
-		technologies: [
-			"Next.js",
-			"TypeScript",
-			"React",
-			"Redux (RTK)",
-			"Tailwind CSS",
-			"AWS",
-			"GitHub Actions",
-			"SaaS",
-			"REST APIs",
-			"Agile Methodologies",
-		],
+		technologies: ["React.js", "Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "AWS", "Docker", "GitHub Actions"],
 	},
 	{
 		company: "Novative Solutions Pvt Ltd",
 		position: "Full Stack Developer",
-		period: "Feb 2021 - Sept 2024",
-		projects: [
+		period: "Feb 2021 - Aug 2024",
+		achievements: [
 			{
-				name: "OAS36ty – CA & Legal Management Software",
-				website: "https://oas36ty.com/",
-				description:
-					"Developed a feature-rich SaaS platform using Vue.js, covering lead generation, task/client management, accounting, bulk emails, invoicing, proposals, and a dynamic dashboard. Integrated email services and streamlined workflows, improving productivity by 40%.",
+				icon: FaCode,
+				title: "SaaS Product Development",
+				description: "Developed SaaS products for CA and legal professionals using React.js, JavaScript (ES6+), and REST APIs.",
 			},
 			{
-				name: "Corporate Insolvency Claim Portal",
-				website: "https://insolv-assist.oas36ty.com/",
+				icon: FaBriefcase,
+				title: "Core Business Modules",
 				description:
-					"Improved Vue.js component communication and integrated APIs for enhanced features and performance. Enabled seamless redirection from the OAS36TY app, boosting navigation and app efficiency by 25%.",
+					"Built core business modules, including lead management, invoicing, proposals, and accounting, covering UI, business logic, and API integration.",
 			},
 			{
-				name: "HR Portal",
-				description: "Built with React.js, featuring employee management and attendance tracking systems.",
+				icon: FaThLarge,
+				title: "Dashboards & Reporting",
+				description:
+					"Delivered dashboards and reporting modules that give firms visibility into leads, billing, and financial data.",
+			},
+			{
+				icon: FaTools,
+				title: "Workflow Automation",
+				description:
+					"Automated email workflows and optimized business processes, improving operational productivity by approximately 40%.",
 			},
 		],
-		technologies: ["Vue.js", "React.js", "Bootstrap", "REST APIs", "SaaS", "Javascript", "Vue Bootstrap", "Vuex"],
+		technologies: ["React.js", "JavaScript (ES6+)", "REST APIs"],
+	},
+	{
+		company: "Rawelcom Services India Pvt Ltd",
+		position: "Telecom Engineer",
+		period: "Jun 2014 - Feb 2017",
+		achievements: [
+			{
+				icon: TbSignal4G,
+				title: "Reliance Jio 4G Network Rollout",
+				description: "Supported the Reliance Jio 4G network rollout through site surveys, equipment installation, and commissioning.",
+			},
+		],
+		technologies: ["Site Surveys", "Equipment Installation", "Network Commissioning"],
 	},
 ];
 
@@ -133,7 +156,7 @@ const Experience = () => {
 	};
 
 	return (
-		<section id="experience" className="py-20 bg-gray-950">
+		<section id="experience" className="py-20">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div
 					ref={ref}
@@ -185,9 +208,11 @@ const Experience = () => {
 										<motion.div
 											key={achievement.title}
 											variants={itemVariants}
+											onMouseMove={handleSpotlight}
 											className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 overflow-hidden"
 										>
 											<div className="absolute inset-0 bg-gradient-to-br from-orange-400/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+											<div className={spotlightClassName} style={spotlightStyle} />
 											<div className="relative z-10">
 												<div className="flex items-start space-x-4">
 													<div className="flex-shrink-0">
@@ -206,9 +231,11 @@ const Experience = () => {
 										<motion.div
 											key={project.name}
 											variants={itemVariants}
+											onMouseMove={handleSpotlight}
 											className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 overflow-hidden"
 										>
 											<div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+											<div className={spotlightClassName} style={spotlightStyle} />
 											<div className="relative z-10">
 												<div className="flex items-start justify-between mb-2">
 													<h5 className="text-lg font-semibold text-white">{project.name}</h5>

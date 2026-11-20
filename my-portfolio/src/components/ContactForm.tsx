@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaEnvelope, FaUser, FaPaperPlane, FaSpinner } from "react-icons/fa";
+import { handleSpotlight, spotlightClassName, spotlightStyle } from "@/lib/spotlight";
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -123,7 +124,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<section id="contact" className="py-20 bg-gray-950">
+		<section id="contact" className="py-20">
 			<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div
 					ref={ref}
@@ -145,9 +146,11 @@ const ContactForm = () => {
 					initial="hidden"
 					animate={isInView ? "visible" : "hidden"}
 					onSubmit={handleSubmit}
-					className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8"
+					onMouseMove={handleSpotlight}
+					className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 overflow-hidden"
 				>
-					<div className="space-y-6">
+					<div className={spotlightClassName} style={spotlightStyle} />
+					<div className="relative z-10 space-y-6">
 						{/* Name Input */}
 						<motion.div variants={itemVariants}>
 							<label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">

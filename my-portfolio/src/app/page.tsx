@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import Stats from "@/components/Stats";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<Header />
 			<main>
 				<Intro />
+				<Stats />
 				<Skills />
 				<Experience />
 				<Projects />

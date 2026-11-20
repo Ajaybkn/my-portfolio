@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaRocket, FaCode, FaGraduationCap, FaGlobe } from "react-icons/fa";
+import { handleSpotlight, spotlightClassName, spotlightStyle } from "@/lib/spotlight";
 
 const goals = [
 	{
@@ -63,7 +64,7 @@ const FutureGoals = () => {
 	};
 
 	return (
-		<section id="goals" className="py-20 bg-gray-950">
+		<section id="goals" className="py-20">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div
 					ref={ref}
@@ -85,10 +86,12 @@ const FutureGoals = () => {
 						<motion.div
 							key={goal.title}
 							variants={itemVariants}
+							onMouseMove={handleSpotlight}
 							className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 overflow-hidden"
 						>
 							{/* Background Gradient */}
 							<div className="absolute inset-0 bg-gradient-to-br from-orange-400/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+							<div className={spotlightClassName} style={spotlightStyle} />
 
 							{/* Content */}
 							<div className="relative z-10">

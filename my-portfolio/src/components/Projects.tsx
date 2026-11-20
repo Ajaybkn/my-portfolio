@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { handleSpotlight, spotlightClassName, spotlightStyle } from "@/lib/spotlight";
 
 interface Project {
 	title: string;
@@ -14,26 +15,7 @@ interface Project {
 	comingSoon?: boolean;
 }
 
-const projects: Project[] = [
-	{
-		title: "Letese",
-		description:
-			"Simplified global compliance through AI-powered, secure, and integrated legal, accounting, and regulatory solutions that adapt, empower, and deliver with integrity.",
-		image: "/LeteseLogoBlack.svg",
-		technologies: [
-			"Next.js",
-			"Typescript",
-			"React",
-			"Redux",
-			"Javascript",
-			"Tailwind Css",
-			"AWS",
-			"Github Actions",
-			"SaaS",
-		],
-		liveLink: "https://letese.co/",
-		comingSoon: false,
-	},
+export const projects: Project[] = [
 	{
 		title: "Oas36ty",
 		description: "All-in-one Cloud Based Office Automation Software",
@@ -115,7 +97,7 @@ const Projects = () => {
 	};
 
 	return (
-		<section id="projects" className="py-20 bg-gray-950">
+		<section id="projects" className="py-20">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div
 					ref={ref}
@@ -137,8 +119,10 @@ const Projects = () => {
 						<motion.div
 							key={project.title}
 							variants={itemVariants}
+							onMouseMove={handleSpotlight}
 							className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden flex flex-col h-full"
 						>
+							<div className={spotlightClassName} style={spotlightStyle} />
 							{/* Project Image */}
 							<div className="relative h-48 w-full overflow-hidden">
 								{project.image.endsWith(".svg") ? (

@@ -3,8 +3,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Orb from "./Orb";
+import ParticleField from "./ParticleField";
 
-const cvLink = "/april resume-2026.pdf";
+const cvLink = "/Ajay_Singh_Khangarot_Resume.pdf";
 
 // Enhanced animations
 const staggerContainer = {
@@ -127,6 +128,7 @@ const Intro = () => {
 			<div className="absolute inset-0 w-full h-full">
 				<Orb hoverIntensity={0.5} rotateOnHover={true} hue={0} forceHoverState={false} />
 			</div>
+			<ParticleField />
 
 			{/* Main Content with Enhanced Styling */}
 			<motion.div
